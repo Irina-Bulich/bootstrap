@@ -1,0 +1,135 @@
+$clampLaptop: 1440; // Responsive Start With Contetent Width = 1640px + padding;
+$media: 980; // Responsive Start Again
+
+// Clamp Function
+@function clampFunction($max, $min: $max * 0.5, $i: null, $clampLaptop: $clampLaptop) {
+	@return clamp(#{$min + px}, #{$max / $clampLaptop * 100vw}, #{$max + px}) $i;
+}
+
+// Clamp Mixin
+@mixin clamp($property, $max, $min: $max * 0.5, $i: null, $clampLaptop: $clampLaptop, $media: $media) {
+
+	// Responsive Start With 1710px
+	#{$property}: clamp(#{$min + px}, #{$max / $clampLaptop * 100vw}, #{$max + px}) $i;
+
+	// Responsive Start Again With 980px
+	@media (max-width: #{$media + px}) {
+		$clampLaptop: $media;
+		#{$property}: clamp(#{$min + px}, #{$max / $clampLaptop * 100vw}, #{$max + px}) $i;
+	}
+}
+
+$mobile-width: 576px;
+$tablet-width: 768px;
+$desktop-width: 980px;
+$laptop-width: 1024px;
+$laptop-medium-width: 1200px;
+$laptop-large-width: 1440px;
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width + 1}) {
+		@content;
+	}
+}
+
+@mixin desktopCT {
+	@media (min-width: #{$laptop-width + 1}) {
+		@content;
+	}
+}
+
+@mixin laptopL {
+	@media (max-width: #{$laptop-large-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin laptopM {
+	@media (max-width: #{$laptop-medium-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media (max-width: #{$laptop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media (max-width: #{$tablet-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin phoneS {
+	@media (max-width: #{$mobile-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin fontsize($desktop, $tablet, $phone) {
+	font-size: $desktop !important;
+
+	@include tablet {
+		font-size: $tablet !important;
+	}
+
+	@include phone {
+		font-size: $phone !important;
+	}
+}
+
+@mixin exfontsize($desktop, $laptopM, $tablet, $phone, $phoneS) {
+	font-size: $desktop !important;
+
+	@include laptopM {
+		font-size: $laptopM !important;
+	}
+
+	@include tablet {
+		font-size: $tablet !important;
+	}
+
+	@include phone {
+		font-size: $phone !important;
+	}
+
+	@include phoneS {
+		font-size: $phoneS !important;
+	}
+}
+
+@mixin responsiveD($property, $laptopL, $laptopM, $laptop) {
+	@include laptopL {
+		#{$property}: $laptopL !important;
+	}
+
+	@include laptopM {
+		#{$property}: $laptopM !important;
+	}
+
+	@include laptop {
+		#{$property}: $laptop !important;
+	}
+}
+
+@mixin responsiveM($property, $tablet, $phone, $phoneS) {
+	@include tablet {
+		#{$property}: $tablet !important;
+	}
+
+	@include phone {
+		#{$property}: $phone !important;
+	}
+
+	@include phoneS {
+		#{$property}: $phoneS !important;
+	}
+}

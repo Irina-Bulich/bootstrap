@@ -1,0 +1,14 @@
+@import "global/variables";
+@import "global/libs";
+@import "global/mixin";
+@import "global/global";
+@import "global/button";
+@import "global/pagination";
+
+@import "template/header";
+@import "template/main-menu";
+
+@import "page/home";
+@import "page/category";
+
+@import "template/footer";

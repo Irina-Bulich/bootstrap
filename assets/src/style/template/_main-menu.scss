@@ -1,0 +1,111 @@
+#main-menu {
+	border-bottom: 1px solid var(--light-grey);
+	padding: unset;
+	@include tablet {
+		border-bottom: unset;
+		background-color: var(--light-grey);
+	}
+	.navbar-collapse {
+		@include tablet {
+			padding: 10px 0 20px;
+		}
+		ul.navbar-nav {
+			li.nav-item {
+				@include desktop {
+					margin-right: 31px;
+				}
+				&:last-child {
+					@include desktop {
+						margin-right: 0;
+					}
+				}
+				&.dropdown {
+					&:hover {
+						.dropdown-menu {
+							@include desktop {
+								display: block;
+							}
+						}
+					}
+					.dropdown-menu {
+						@include desktop {
+							display: none;
+						}
+					}
+				}
+				> a {
+					white-space: nowrap;
+					@include desktop {
+						padding: 18px 0.5rem;
+					}
+				}
+				a {
+					color: var(--textcolor);
+					&:hover {
+						color: var(--blue);
+					}
+					&.dropdown-toggle {
+						&:after {
+							margin-left: 0.855em;
+						}
+					}
+				}
+				ul.dropdown-menu {
+					padding: 0;
+					@include desktop {
+						margin-top: 0;
+						border-color: var(--light-grey);
+					}
+					@include tablet {
+						border: unset;
+						background-color: var(--light-grey);
+					}
+					li {
+						a {
+							padding: 0.3rem 1rem;
+							font-size: 15px;
+							@include tablet {
+								font-size: 14px;
+							}
+							&:hover {
+								background-color: var(--blue);
+								color: var(--white);
+							}
+						}
+					}
+				}
+			}
+		}
+		ul.main-menu-nav {
+			li.nav-item {
+				&:first-child {
+					> a {
+						@include desktop {
+							padding-left: 0;
+						}
+					}
+				}
+			}
+		}
+		ul.right-menu-nav {
+			li.nav-item {
+				&:last-child {
+					> a {
+						@include desktop {
+							padding-right: 4px;
+						}
+						&:before {
+							content: "\f82d";
+							font-family: "Font Awesome 5 Pro";
+							font-weight: 400;
+							margin-right: 12px;
+						}
+					}
+				}
+				> a {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}

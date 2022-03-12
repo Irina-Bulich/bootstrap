@@ -1,0 +1,144 @@
+/* USER VARIABLES SECTION */
+:root {
+	--blue: #00467f;
+	--blue-lighter: #3d6c9d;
+	--blue-light: #849bc1;
+	--green: #44ba26;
+	--orange: #ff6b35;
+	--black: #272629;
+	--darker-grey: #727880;
+	--dark-grey: #909bab;
+	--grey: #c3cbd6;
+	--light-grey: #eaeef3;
+	--lightest-grey: #f6f8fa;
+	--error: #d23c0f;
+	--caution: #fdcd21;
+	--success: #44ba26;
+	--white: #ffffff;
+	--bgbody: #ffffff;
+
+	--fontsize: 16px;
+	--textcolor: #272629;
+	--lineheight: 1.5;
+	--userfont: "Inter", sans-serif;
+	--transition: 0.3s ease;
+}
+
+// Options
+$theme-colors: (
+	"primary": #00467f,
+	"secondary": #44ba26,
+	"success": #44ba26,
+	"info": #849bc1,
+	"warning": #fdcd21,
+	"danger": #d23c0f,
+	"light": #ffffff,
+	"dark": #272629,
+);
+
+// @see https://getbootstrap.com/docs/5.1/customize/options/
+$spacer: 1rem;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 3,
+);
+
+// Grid variables
+// Set the number of columns and specify the width of the gutters.
+// @see https://getbootstrap.com/docs/5.1/layout/grid/#variables
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 6;
+$gutters: $spacers;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 981px,
+	xl: 1200px,
+	xxl: 1440px,
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1344px,
+);
+
+/* FONTS LOAD SECTION */
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: url($furl) format('woff2');
+  }
+}
+
+// @include font('rubik-ag', normal, 400, '../fonts/rubik-400.woff2');
+// @include font('rubik-ag', normal, 500, '../fonts/rubik-500.woff2');
+// @include font('rubik-ag', normal, 700, '../fonts/rubik-700.woff2');
+
+// @include font('Font Awesome 6 Free', normal, 400, '../fonts/fontawesome/fa-regular-400.woff2');
+// @include font('Font Awesome 6 Free', normal, 900, '../fonts/fontawesome/fa-solid-900.woff2');
+
+@include font('Font Awesome 5 Brands', normal, 400, '../fonts/fontawesome/fa-brands-400.woff2');
+@include font('Font Awesome 5 Duotone', normal, 900, '../fonts/fontawesome/fa-duotone-900.woff2');
+@include font('Font Awesome 5 Pro', normal, 300, '../fonts/fontawesome/fa-light-300.woff2');
+@include font('Font Awesome 5 Pro', normal, 400, '../fonts/fontawesome/fa-regular-400.woff2');
+@include font('Font Awesome 5 Pro', normal, 900, '../fonts/fontawesome/fa-solid-900.woff2');
+
+
+// stylelint-enable value-keyword-case
+// $font-family-base:            'Inter';
+
+// // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// // $font-size-base affects the font size of the body text
+// $font-size-root:              null;
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+// $font-size-sm:                $font-size-base * .875;
+// $font-size-lg:                $font-size-base * 1.25;
+
+// $font-weight-lighter:         lighter;
+// $font-weight-light:           300;
+// $font-weight-normal:          400;
+// $font-weight-bold:            700;
+// $font-weight-bolder:          bolder;
+
+// $font-weight-base:            $font-weight-normal;
+
+// $line-height-base:            1.5;
+// $line-height-sm:              1.25;
+// $line-height-lg:              2;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base * 1.25;
+
+$headings-font-weight: 700;
+$headings-line-height: 1.2;
+
+$display-font-sizes: (
+	1: 2.5rem,
+	2: 2rem,
+	3: 1.75rem,
+	4: 1.5rem,
+	5: 1.25rem,
+	6: 1rem,
+);
+
+$display-font-weight: 700;
+$display-line-height: 1.2;
+
+$lead-font-weight: 400;
+
