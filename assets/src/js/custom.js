@@ -55,6 +55,7 @@ jQuery(document).ready(function ($) {
 	// });
     $(function() {
         $('.product-card__img').matchHeight();
+		$('.product-card h6').matchHeight();
     });
 
     $('.select').on('click', '.select__head', function () {

@@ -1,6 +1,9 @@
 .pagination-row {
     .all-pages {
         color: var(--grey);
+        @include laptopM {
+            font-size: 12px;
+        }
     }
     .page-item {
         .page-link {
@@ -16,6 +19,11 @@
             &.curent {
                color: var(--green);
             }
+        }
+    }
+    .per-page {
+        @include laptopM {
+            font-size: 12px;
         }
     }
 }

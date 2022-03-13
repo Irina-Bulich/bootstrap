@@ -1,8 +1,10 @@
 .favorites-products{
+    max-width: 910px;
     .product-card {
       h6 {
         font-size: 16px;
         color: #000000;
+        max-width: 186px;
       }
     }
 }
@@ -14,7 +16,7 @@
             margin-bottom: 0;
         }
         .btn-product-list {
-            padding-left: 30px;
+            padding-left: 25px;
             padding-right: 0;
         }
     }
@@ -23,9 +25,9 @@
         display: block;
         min-width: 220px;
         width: 100%;
-        max-width: 361px;
+        max-width: 275px;
         margin-bottom: 0;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .select__head {
@@ -33,7 +35,7 @@
         max-width: 100%;
         border-radius: 5px;
         padding: 14px 15px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 18px;
         cursor: pointer;
         border: 1px solid var(--grey);
@@ -46,12 +48,13 @@
         color: var(--grey);
         position: absolute;
         right: 20px;
-        bottom: 50%;
+        bottom: 57%;
         transform: translateY(50%);
         font-family: "Font Awesome 5 Pro";
         content: '\f107';
         display: block;
         transition: .2s ease-in;
+        font-size: 20px;
     }
 
     .select__head.open::after {
@@ -97,6 +100,7 @@
         border-top: 1px solid var(--grey);
         padding: 10px 15px;
         cursor: pointer;
+        font-size: 16px;
         list-style-type: none;
         background: #fff;
         color: var(--textcolor);
@@ -109,6 +113,7 @@
         list-style: none;
         li {
             color: var(--grey);
+            font-size: 12px;
             &.active {              
                 
                 a {
@@ -194,7 +199,7 @@
                         font-size: 16px;
                         line-height: 19px;
                         color: var(--black);
-                        padding-right: 5px;
+                        padding-right: 10px;
                     }
                     .details {
                         color: var(--black);
@@ -284,6 +289,10 @@
 }
 .info-card {
     &__item {
+        @include tablet {
+            max-width: 300px;
+            margin: auto;
+        }
         h5 {
             font-family: 'Inter';
             font-style: normal;

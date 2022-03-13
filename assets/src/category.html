@@ -14,12 +14,12 @@
 	@@include('template/main-menu.html')
 
 	<main id="main-content">
-		<div class="container mb-5">
+		<div class="container mb-4">
 			<div class="row mb-5">
-				<div class="col-12 col-lg-3 sitebar-filter border-end">
+				<div class="d-none d-lg-block col-12 col-lg-3 sitebar-filter border-end">
 					<div class="row sitebar-filter__item border-bottom mt-5 mb-5 pb-5">
 						<h5>Stock Type</h5>
-						<ul class="mt-2 mb-0">
+						<ul class="mt-3 mb-0">
 							<li>
 								<div class="form-check mb-2">
 									<input type="checkbox" name="" id="in-stock" value="" class="form-check-input filter-checkbox">
@@ -37,7 +37,7 @@
 
 					<div class="row sitebar-filter__item border-bottom mt-5 mb-5 pb-5">
 						<h5>Brand</h5>
-						<ul class="mt-2 mb-0">
+						<ul class="mt-3 mb-1">
 							<li>
 								<div class="form-check mb-2">
 									<input type="checkbox" name="" id="2n" value="" class="form-check-input filter-checkbox">
@@ -80,7 +80,7 @@
 
 					<div class="row sitebar-filter__item border-bottom mt-5 mb-5 pb-5">
 						<h5>Price Range</h5>
-						<ul class="mt-2 mb-0">
+						<ul class="mt-3 mb-1">
 							<li>
 								<div class="form-check mb-2">
 									<input type="checkbox" name="" id="0-$100" value="" class="form-check-input filter-checkbox">
@@ -141,7 +141,7 @@
 
 					<div class="row sitebar-filter__item mt-5 mb-0 pb-0">
 						<h5>Chipset</h5>
-						<ul class="mt-2 mb-0">
+						<ul class="mt-3 mb-1">
 							<li>
 								<div class="form-check mb-2">
 									<input type="checkbox" name="" id="amd" value="" class="form-check-input filter-checkbox">
@@ -196,55 +196,55 @@
 
 				</div>
 				<div class="col-12 col-lg-9 p-0">
-					<section class="favorites-products border-bottom">
-						<div class="row">
-							<div class="col-lg-3 mb-5 mt-4 border-end">
-								<div  class="product-card text-center mr-4 ml-4">
+					<section class="d-none d-md-block favorites-products border-bottom">
+						<div class="row m-0">
+							<div class="col-3 mb-5 mt-4 border-end">
+								<div  class="product-card text-center m-auto">
 									<div  class="product-card__img">
 										<img src="../img/hp laptop.png" alt="">
 									</div>									
-									<h6 class="pb-3">Save up to <span class="text-secondary">$300</span> on select Chromebooks.</h6>
+									<h6 class="pb-3 m-auto">Save up to <span class="text-secondary">$300</span> on select Chromebooks.</h6>
 									<a href="" title="" class="btn btn-outline-dark btn-view-product m-auto">View Products</a>
 								</div>
 							</div>
-							<div class="col-lg-3 mb-5 mt-4 border-end">
-								<div  class="product-card text-center ml-4 mr-4">
+							<div class="col-3 mb-5 mt-4 border-end">
+								<div  class="product-card text-center m-auto">
 									<div  class="product-card__img">
 										<img src="../img/LG Monitor.png" alt="">
 									</div>
-									<h6 class="pb-3">Save up to <span class="text-secondary">$140</span> on select monitors.</h6>
+									<h6 class="pb-3 m-auto">Save up to <span class="text-secondary">$140</span> on select monitors.</h6>
 									<a href="" title="" class="btn btn-outline-dark btn-view-product m-auto">View Products</a>
 								</div>
 							</div>
-							<div class="col-lg-3 mb-5 mt-4 border-end">
-								<div  class="product-card text-center ml-4 mr-4">
+							<div class="col-3 mb-5 mt-4 border-end">
+								<div  class="product-card text-center m-auto">
 									<div  class="product-card__img">
 										<img src="../img/epson printer.png" alt="">
 									</div>
-									<h6 class="pb-3">Save on printers.</h6>
+									<h6 class="pb-3 m-auto">Save on printers.</h6>
 									<a href="" title="" class="btn btn-outline-dark btn-view-product m-auto">View Products</a>
 								</div>
 							</div>
-							<div class="col-lg-3 mb-5 mt-4">
-								<div  class="product-card text-center">
+							<div class="col-3 mb-5 mt-4">
+								<div  class="product-card text-center  m-auto">
 									<div  class="product-card__img">
 										<img src="../img/lenovo desktop 1.png" alt="">
 									</div>
-									<h6 class="pb-3">Save <span class="text-secondary">50%</span> on select wireless routers.</h6>
+									<h6 class="pb-3 m-auto">Save <span class="text-secondary">50%</span> on select wireless routers.</h6>
 									<a href="" title="" class="btn btn-outline-dark btn-view-product m-auto">View Products</a>
 								</div>
 							</div>
 						</div>
 					</section>
-					<section class="breadcrumbs border-bottom pt-5 pb-5 px-4">
+					<section class="breadcrumbs border-bottom pt-4 pb-4 px-3">
 						<div class="row">
-							<div class="col-4 d-flex align-items-center">
+							<div class="col-3 d-flex align-items-center">
 								<ul class="d-flex align-items-center mb-0 p-0">
 									<li>Home</li>
 									<li class="active"><span>/</span><a href="">Desktops</a></li>
 								</ul>
 							</div>
-							<div class="col-8 d-flex align-items-center justify-content-end col-sort">
+							<div class="d-none d-lg-flex col-9 d-flex align-items-center justify-content-end col-sort">
 								<p>Sort By</p>
 								<div class="select">
 									<input class="select__input" type="hidden" name="">
@@ -258,22 +258,33 @@
 								<a href="" title="" class="btn-product-list" id="btn-style__list"><img src="../img/svgicons/product-list.svg" alt=""></a>
 								<a href="" title="" class="btn-product-list" id="btn-style__grid"><img src="../img/svgicons/product-grid.svg" alt=""></a>
 							</div>
+							<div class="d-lg-none col-9 d-flex align-items-center justify-content-end col-sort">
+								<div class="select">
+									<input class="select__input" type="hidden" name="">
+									<div class="select__head"><img src="../img/svgicons/product-grid.svg" alt="">Filter & Sort</div>
+									<ul class="select__list" style="display: none;">
+										<li class="select__item">Popularity</li>
+										<li class="select__item">Price ASC</li>
+										<li class="select__item">Price DESC</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</section>
-					<section class="section-product pt-3">
-						<div class="style-list">
-							<div class="row product-item mt-5 mb-5">
+					<section class="section-product pt-5 px-5">
+						<div class="style-list mb-0 mb-md-5 pb-2">
+							<div class="row product-item mt-5 mb-5 d-flex">
 								<div class="block__product-img col-3 text-center">
 									<img src="../img/image.png" alt="">
-									<div class="form-check mt-3 item-compare d-flex align-items-center justify-content-center">
+									<div class="form-check mt-2 item-compare d-flex align-items-center justify-content-center">
 										<input type="checkbox" name="" id="compare-1" value="" class="form-check-input">
 										<label class="form-check-label" for="compare-1">compare</label>
 									</div>
 								</div>
-								<div class="block__product-description col-6">
+								<div class="block__product-description col-6 mt-3 p-0">
 									<h4><a href="">Lenovo ThinkCentre M70q Gen 2 11MY000TUS Desktop Computer - Intel Core i3 10th Gen I3-10105T Quad-core (4 Core) 3 GHz - 8 GB RAM DDR4 SDRAM - 128 GB M.2 PCI Express NVMe SSD - Tiny - Black</a></h4>
-									<div class="row d-flex align-items-center justify-content-between mt-3">
-										<div class="col-4 d-flex align-items-center">
+									<div class="row d-flex align-items-center justify-content-between mt-2">
+										<div class="col-xxl-4 d-flex align-items-center">
 											<ul class="list-star p-0 m-0 d-flex align-items-center">
 												<li class="star-fill"></li>
 												<li class="star-fill"></li>
@@ -283,11 +294,11 @@
 											</ul>
 											<span class="count">45</span>
 										</div>
-										<div class="col-8 d-flex align-items-center row-series">
+										<div class="col-xxl-8 d-flex align-items-center row-series">
 											COLAMCO Part #: 1-2076677 <span>|</span> MFG Part #: 11MY000TUS												
 										</div>
 									</div>
-									<div class="excerpt mt-3 mb-3">
+									<div class="excerpt mt-2 mb-2">
 										Intel B560 Chip - Windows 10 Pro 64-bit - Intel UHD Graphics 630 DDR4 SDRAM - English Keyboard - IEEE 802.11ax - 65 W
 									</div>
 									<div class="block-details d-flex align-items-center">
@@ -296,24 +307,24 @@
 										<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 									</div>
 								</div>
-								<div class="block__product-price col-3 d-flex flex-column align-items-end">
+								<div class="block__product-price col-3 d-flex flex-column align-items-end mt-3 p-0">
 									<div class="price">$1,670.87</div>
 									<div class="discount mt-2 mb-2">20% OFF</div>
 									<div class="price-sale mb-3">$1,300.98</div>
 									<a class="btn btn-primary">Add to Cart</a>
 								</div>
 							</div>
-							<div class="row product-item mt-5 mb-5">
+							<div class="row product-item mt-5 mb-5 d-flex">
 								<div class="block__product-img col-3 text-center">
 									<img src="../img/image.png" alt="">
-									<div class="form-check mt-3 item-compare d-flex align-items-center justify-content-center">
-										<input type="checkbox" name="" id="compare-2" value="" class="form-check-input">
-										<label class="form-check-label" for="compare-2">compare</label>
+									<div class="form-check mt-2 item-compare d-flex align-items-center justify-content-center">
+										<input type="checkbox" name="" id="compare-1" value="" class="form-check-input">
+										<label class="form-check-label" for="compare-1">compare</label>
 									</div>
 								</div>
-								<div class="block__product-description col-6">
+								<div class="block__product-description col-6 mt-3 p-0">
 									<h4><a href="">Lenovo ThinkCentre M70q Gen 2 11MY000TUS Desktop Computer - Intel Core i3 10th Gen I3-10105T Quad-core (4 Core) 3 GHz - 8 GB RAM DDR4 SDRAM - 128 GB M.2 PCI Express NVMe SSD - Tiny - Black</a></h4>
-									<div class="row d-flex align-items-center justify-content-between mt-3">
+									<div class="row d-flex align-items-center justify-content-between mt-2">
 										<div class="col-4 d-flex align-items-center">
 											<ul class="list-star p-0 m-0 d-flex align-items-center">
 												<li class="star-fill"></li>
@@ -328,7 +339,7 @@
 											COLAMCO Part #: 1-2076677 <span>|</span> MFG Part #: 11MY000TUS												
 										</div>
 									</div>
-									<div class="excerpt mt-3 mb-3">
+									<div class="excerpt mt-2 mb-2">
 										Intel B560 Chip - Windows 10 Pro 64-bit - Intel UHD Graphics 630 DDR4 SDRAM - English Keyboard - IEEE 802.11ax - 65 W
 									</div>
 									<div class="block-details d-flex align-items-center">
@@ -337,7 +348,130 @@
 										<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 									</div>
 								</div>
-								<div class="block__product-price col-3 d-flex flex-column align-items-end">
+								<div class="block__product-price col-3 d-flex flex-column align-items-end mt-3 p-0">
+									<div class="price">$1,670.87</div>
+									<div class="discount mt-2 mb-2">20% OFF</div>
+									<div class="price-sale mb-3">$1,300.98</div>
+									<a class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+							<div class="row product-item mt-5 mb-5 d-flex">
+								<div class="block__product-img col-3 text-center">
+									<img src="../img/image.png" alt="">
+									<div class="form-check mt-2 item-compare d-flex align-items-center justify-content-center">
+										<input type="checkbox" name="" id="compare-1" value="" class="form-check-input">
+										<label class="form-check-label" for="compare-1">compare</label>
+									</div>
+								</div>
+								<div class="block__product-description col-6 mt-3 p-0">
+									<h4><a href="">Lenovo ThinkCentre M70q Gen 2 11MY000TUS Desktop Computer - Intel Core i3 10th Gen I3-10105T Quad-core (4 Core) 3 GHz - 8 GB RAM DDR4 SDRAM - 128 GB M.2 PCI Express NVMe SSD - Tiny - Black</a></h4>
+									<div class="row d-flex align-items-center justify-content-between mt-2">
+										<div class="col-4 d-flex align-items-center">
+											<ul class="list-star p-0 m-0 d-flex align-items-center">
+												<li class="star-fill"></li>
+												<li class="star-fill"></li>
+												<li class="star-fill"></li>
+												<li class="star-fill"></li>
+												<li class="star-empty"></li>
+											</ul>
+											<span class="count">45</span>
+										</div>
+										<div class="col-8 d-flex align-items-center row-series">
+											COLAMCO Part #: 1-2076677 <span>|</span> MFG Part #: 11MY000TUS												
+										</div>
+									</div>
+									<div class="excerpt mt-2 mb-2">
+										Intel B560 Chip - Windows 10 Pro 64-bit - Intel UHD Graphics 630 DDR4 SDRAM - English Keyboard - IEEE 802.11ax - 65 W
+									</div>
+									<div class="block-details d-flex align-items-center">
+										<div class="stock mr-3">In Stock</div>
+										<div class="shipping">FREE SHIPPING</div>
+										<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
+									</div>
+								</div>
+								<div class="block__product-price col-3 d-flex flex-column align-items-end mt-3 p-0">
+									<div class="price">$1,670.87</div>
+									<div class="discount mt-2 mb-2">20% OFF</div>
+									<div class="price-sale mb-3">$1,300.98</div>
+									<a class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+							<div class="row product-item mt-5 mb-5 d-flex">
+								<div class="block__product-img col-3 text-center">
+									<img src="../img/image.png" alt="">
+									<div class="form-check mt-2 item-compare d-flex align-items-center justify-content-center">
+										<input type="checkbox" name="" id="compare-1" value="" class="form-check-input">
+										<label class="form-check-label" for="compare-1">compare</label>
+									</div>
+								</div>
+								<div class="block__product-description col-6 mt-3 p-0">
+									<h4><a href="">Lenovo ThinkCentre M70q Gen 2 11MY000TUS Desktop Computer - Intel Core i3 10th Gen I3-10105T Quad-core (4 Core) 3 GHz - 8 GB RAM DDR4 SDRAM - 128 GB M.2 PCI Express NVMe SSD - Tiny - Black</a></h4>
+									<div class="row d-flex align-items-center justify-content-between mt-2">
+										<div class="col-4 d-flex align-items-center">
+											<ul class="list-star p-0 m-0 d-flex align-items-center">
+												<li class="star-fill"></li>
+												<li class="star-fill"></li>
+												<li class="star-fill"></li>
+												<li class="star-fill"></li>
+												<li class="star-empty"></li>
+											</ul>
+											<span class="count">45</span>
+										</div>
+										<div class="col-8 d-flex align-items-center row-series">
+											COLAMCO Part #: 1-2076677 <span>|</span> MFG Part #: 11MY000TUS												
+										</div>
+									</div>
+									<div class="excerpt mt-2 mb-2">
+										Intel B560 Chip - Windows 10 Pro 64-bit - Intel UHD Graphics 630 DDR4 SDRAM - English Keyboard - IEEE 802.11ax - 65 W
+									</div>
+									<div class="block-details d-flex align-items-center">
+										<div class="stock mr-3">In Stock</div>
+										<div class="shipping">FREE SHIPPING</div>
+										<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
+									</div>
+								</div>
+								<div class="block__product-price col-3 d-flex flex-column align-items-end mt-3 p-0">
+									<div class="price">$1,670.87</div>
+									<div class="discount mt-2 mb-2">20% OFF</div>
+									<div class="price-sale mb-3">$1,300.98</div>
+									<a class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+							<div class="row product-item mt-5 mb-5 d-flex">
+								<div class="block__product-img col-3 text-center">
+									<img src="../img/image.png" alt="">
+									<div class="form-check mt-2 item-compare d-flex align-items-center justify-content-center">
+										<input type="checkbox" name="" id="compare-1" value="" class="form-check-input">
+										<label class="form-check-label" for="compare-1">compare</label>
+									</div>
+								</div>
+								<div class="block__product-description col-6 mt-3 p-0">
+									<h4><a href="">Lenovo ThinkCentre M70q Gen 2 11MY000TUS Desktop Computer - Intel Core i3 10th Gen I3-10105T Quad-core (4 Core) 3 GHz - 8 GB RAM DDR4 SDRAM - 128 GB M.2 PCI Express NVMe SSD - Tiny - Black</a></h4>
+									<div class="row d-flex align-items-center justify-content-between mt-2">
+										<div class="col-4 d-flex align-items-center">
+											<ul class="list-star p-0 m-0 d-flex align-items-center">
+												<li class="star-fill"></li>
+												<li class="star-fill"></li>
+												<li class="star-fill"></li>
+												<li class="star-fill"></li>
+												<li class="star-empty"></li>
+											</ul>
+											<span class="count">45</span>
+										</div>
+										<div class="col-8 d-flex align-items-center row-series">
+											COLAMCO Part #: 1-2076677 <span>|</span> MFG Part #: 11MY000TUS												
+										</div>
+									</div>
+									<div class="excerpt mt-2 mb-2">
+										Intel B560 Chip - Windows 10 Pro 64-bit - Intel UHD Graphics 630 DDR4 SDRAM - English Keyboard - IEEE 802.11ax - 65 W
+									</div>
+									<div class="block-details d-flex align-items-center">
+										<div class="stock mr-3">In Stock</div>
+										<div class="shipping">FREE SHIPPING</div>
+										<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
+									</div>
+								</div>
+								<div class="block__product-price col-3 d-flex flex-column align-items-end mt-3 p-0">
 									<div class="price">$1,670.87</div>
 									<div class="discount mt-2 mb-2">20% OFF</div>
 									<div class="price-sale mb-3">$1,300.98</div>
@@ -345,14 +479,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="row pagination-row mt-5">
-							<div class="col-1"></div>
-							<div class="col-2 text-center all-pages">
+						<div class="row pagination-row mt-0 mt-md-5">
+							<div class="col-0 col-xxl-1"></div>
+							<div class="col-md-4 col-xxl-3 justify-content-center all-pages d-flex align-items-center order-1 order-md-0 mb-2 mb-md-0">
 								Displaying 1 – 16 of 3163 
 							</div>
-							<div class="col-6">
+							<div class="col-md-5 d-flex align-items-center justify-content-center mb-2 mb-md-0">
 								<nav aria-label="Page navigation example">
-									<ul class="pagination justify-content-center">
+									<ul class="pagination justify-content-center mb-0">
 										<li class="page-item">
 										<a class="page-link"><i class="fa-regular fa-angle-left"></i></a>
 										</li>
@@ -367,15 +501,15 @@
 									</ul>
 								</nav>
 							</div>
-							<div class="col-3 per-page text-end">
+							<div class="col-md-3 per-page justify-content-center justify-content-md-end p-0 d-flex align-items-center order-2 order-md-0">
 								Results Per Page: <strong>16</strong>
 							</div>
 						</div>
 					</section>
 				</div>
 			</div>
-			<div class="row info-card pt-5">
-				<div class="col-3 p-5">
+			<div class="row info-card pt-5 mb-5 mb-xl-0">
+				<div class="col-sm-6 col-lg-3 p-2 p-xl-5 mb-5 mb-lg-0">
 					<div class="info-card__item text-center">
 						<img src="img/comment-alt-smile.png" alt="">
 						<h5 class="mb-4 mt-4">Customer Reviews</h5>
@@ -383,7 +517,7 @@
 						<a href="" class="btn-lined">VIEW REVIEWS</a>
 					</div>
 				</div>
-				<div class="col-3 p-5">
+				<div class="col-sm-6 col-lg-3 p-2 p-xl-5 mb-5 mb-lg-0">
 					<div class="info-card__item text-center">
 						<img src="img/clipboard-list.png" alt="">
 						<h5 class="mb-4 mt-4">Order FAQ</h5>
@@ -391,7 +525,7 @@
 						<a href="" class="btn-lined">VIEW REVIEWS</a>
 					</div>
 				</div>
-				<div class="col-3 p-5">
+				<div class="col-sm-6 col-lg-3 p-2 p-xl-5 mb-5 mb-lg-0">
 					<div class="info-card__item text-center">
 						<img src="img/conveyor-belt.png" alt="">
 						<h5 class="mb-4 mt-4">Shipping FAQ</h5>
@@ -399,7 +533,7 @@
 						<a href="" class="btn-lined">VIEW REVIEWS</a>
 					</div>
 				</div>
-				<div class="col-3 p-5">
+				<div class="col-sm-6 col-lg-3 p-2 p-xl-5 mb-5 mb-lg-0">
 					<div class="info-card__item text-center">
 						<img src="img/shipping-fast.png" alt="">
 						<h5 class="mb-4 mt-4">Returns FAQ</h5>
