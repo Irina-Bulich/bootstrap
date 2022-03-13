@@ -131,17 +131,15 @@
 .section-product {
     .style-list {
         .product-item {
-            .block__product-img {
-                .item-compare {
-                    label {
-                        padding-left: 10px;
-                        text-transform: capitalize;
-                        font-family: 'Inter';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 19px;
-                    }
+            .item-compare {
+                label {
+                    padding-left: 10px;
+                    text-transform: capitalize;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
                 }
             }
             .block__product-description {
@@ -174,23 +172,16 @@
                     font-size: 12px;
                 }
                 .row-series {
-                    white-space: nowrap;
-                    span {
-                        padding-left: 5px;
-                        padding-right: 5px;
+                    span {                        
+                        white-space: nowrap;
+                        &.separator {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
                     }
                 }
                 .block-details {
-                    .stock {
-                        font-family: 'Inter';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 16px;
-                        line-height: 19px;
-                        color: var(--green);
-                        text-transform: capitalize;
-                        padding-right: 20px;
-                    }
+                 
                     .shipping {
                         text-transform: uppercase;
                         font-family: 'Inter';
@@ -230,36 +221,46 @@
                     }
                 }
             }
+            .stock {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: var(--green);
+                text-transform: capitalize;
+                padding-right: 20px;
+            }
+            .discount {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: #FFFFFF;
+                background-color: var(--orange);
+                padding: 3px 19px;
+            }
             .block__product-price {
                 .price {
                     font-family: 'Inter';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 22px;
                     line-height: 27px;
                     /* identical to box height */
 
                     text-align: right;
                     text-decoration-line: line-through;
                     color: var(--darker-grey);
+                    @include fontsize(22px, 20px, 16px);
                     &-sale {
                         font-family: 'Inter';
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 30px;
+                        @include fontsize(30px, 25px, 16px);
                         line-height: 36px;
                     }
-                }
-                .discount {
-                    font-family: 'Inter';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 15px;
-                    color: #FFFFFF;
-                    background-color: var(--orange);
-                    padding: 3px 19px;
-                }
+                }           
             }
         }
     }
