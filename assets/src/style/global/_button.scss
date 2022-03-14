@@ -61,4 +61,34 @@
             right: 100%;
         }
     }
+    &-add-cart {
+        width: 111px;
+        height: 31px;
+        color: #fff;
+        background-color: var(--green);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        padding-left: 15px;
+        transition-duration: .4s;
+        position: relative;
+        &:before {
+            position: absolute;
+            font-family: "Font Awesome 5 Pro";
+            content: "\2b";
+            bottom: 58%;
+            left: 9px;
+            width: 5px;
+            height: 5px;
+            color: #fff;
+            font-size: 14px;
+        }
+        &:hover {
+            background-color: var(--green);
+            color: #FFFFFF;
+            opacity: .85;
+        }
+    }
 }
