@@ -170,10 +170,10 @@ input {
 		}
 	}
 }
-input[type="checkbox"] {
+input[type=checkbox] {
 	border-radius: 0 !important;
 }
-input[type="checkbox"]:checked {
+input[type=checkbox]:checked {
 	background-color: var(--green);
 	border-color: var(--green);
 }
