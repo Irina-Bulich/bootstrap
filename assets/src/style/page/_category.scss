@@ -408,6 +408,9 @@
             .accordion-body {
                 padding: 15px 0;
                 border-top: 1px solid #dee2e6;
+                li {
+                    cursor: pointer;
+                }
             }
             ul {
                 padding: 0;
@@ -439,4 +442,7 @@
             color: var(--black);
         }
     }
+}
+.form-check-label {
+    cursor: pointer;
 }
