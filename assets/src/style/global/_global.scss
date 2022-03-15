@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap");
 /* GENERAL CSS SETTINGS */
 ::placeholder {
 	color: #666;
 }
-
 ::selection {
 	background-color: var(--blue);
 	color: #fff;
@@ -13,11 +11,9 @@
 input,
 textarea {
 	outline: none;
-
 	&:focus:required:invalid {
 		border-color: var(--error);
 	}
-
 	&:required:valid {
 		border-color: var(--green);
 	}
@@ -25,15 +21,12 @@ textarea {
 
 ::-webkit-scrollbar {
 	width: 10px;
-
 	&-track {
 		background-color: var(--light-grey);
 	}
-
 	&-thumb {
 		border-radius: 5px;
 		background-color: var(--blue);
-
 		&:hover {
 			background-color: var(--blue);
 		}
@@ -55,72 +48,71 @@ a {
 	color: var(--blue);
 	text-decoration: none;
 	transition: var(--transition);
-
 	&:hover {
 		color: var(--textcolor);
 	}
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-	color: var(--black);
-}
-
+// h1,
+// .h1,
+// h2,
+// .h2,
+// h3,
+// .h3,
+// h4,
+// .h4,
+// h5,
+// .h5,
+// h6,
+// .h6 {
+// 	color: var(--black);
+// }
 h1,
 .h1 {
 	font-size: clampFunction(40, 32);
 }
-
 h2,
 .h2 {
 	font-size: clampFunction(32, 26);
 }
-
 h3,
 .h3 {
 	font-size: clampFunction(24, 18);
 }
-
 h4,
 .h4 {
 	font-size: clampFunction(24, 18);
 	font-weight: 400;
 }
-
 h5,
 .h5 {
 	font-size: clampFunction(20, 20);
 	font-weight: 400;
 }
-
 h6,
 .h6 {
 	font-size: clampFunction(20, 16);
 	font-weight: 400;
 }
-
 p {
 	font-size: clampFunction(16, 14);
 }
 
 .entry-title {
+	font-weight: 900;
+	margin-bottom: 0.9em;
 	span {
 		color: var(--green);
 	}
 }
+
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+.max-w-500 {
+	max-width: 500px;
 }
 
 input,
@@ -146,29 +138,24 @@ button,
 	font-family: "Font Awesome 5 Brands";
 	font-weight: 400;
 }
-
 .fad {
 	position: relative;
 	font-family: "Font Awesome 5 Duotone";
 	font-weight: 900;
 }
-
 .fal {
 	font-family: "Font Awesome 5 Pro";
 	font-weight: 300;
 }
-
 .far {
 	font-family: "Font Awesome 5 Pro";
 	font-weight: 400;
 }
-
 .fa,
 .fas {
 	font-family: "Font Awesome 5 Pro";
 	font-weight: 900;
 }
-
 .fa-user-headset:before {
 	content: "\f82d";
 }
@@ -177,18 +164,16 @@ input {
 	&.form-control {
 		border: 1px solid var(--grey);
 		border-radius: 5px;
-
 		&::placeholder {
 			color: var(--grey);
 			font-weight: 300;
 		}
 	}
 }
-input[type=checkbox] {
-	border-radius: 0!important;
+input[type="checkbox"] {
+	border-radius: 0 !important;
 }
-input[type=checkbox]:checked {
+input[type="checkbox"]:checked {
 	background-color: var(--green);
 	border-color: var(--green);
-	;
 }

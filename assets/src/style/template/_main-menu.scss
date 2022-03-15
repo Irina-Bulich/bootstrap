@@ -21,7 +21,7 @@
 				}
 				&.dropdown {
 					&:hover {
-						.dropdown-menu {
+						> .dropdown-menu {
 							@include desktop {
 								display: block;
 							}
@@ -58,19 +58,47 @@
 					}
 					@include tablet {
 						border: unset;
-						background-color: var(--light-grey);
+						background-color: var(--lightest-grey);
+						padding-left: 10px;
 					}
 					li {
+						&.dropdown {
+							&:hover {
+								> .dropdown-menu {
+									@include desktop {
+										display: block;
+									}
+								}
+							}
+						}
 						a {
 							padding: 0.3rem 1rem;
 							font-size: 15px;
 							@include tablet {
 								font-size: 14px;
+								&:focus {
+									background-color: unset;
+								}
 							}
 							&:hover {
 								background-color: var(--blue);
 								color: var(--white);
 							}
+							&.dropdown-toggle {
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+								&::after {
+									content: "\f054";
+								}
+							}
+						}
+					}
+					ul.submenu {
+						@include desktop {
+							position: absolute;
+							left: 100%;
+							top: -1px;
 						}
 					}
 				}

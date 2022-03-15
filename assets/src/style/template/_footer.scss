@@ -1,6 +1,12 @@
 #main-footer {
 	background-color: var(--lightest-grey);
 	padding: 97px 0 60px;
+	@include tablet {
+		padding: 67px 0 45px;
+	}
+	@include phone {
+		padding: 37px 0 30px;
+	}
 	> .container {
 		@include phone {
 			display: flex;
@@ -62,18 +68,35 @@
 		list-style: none;
 		@include phone {
 			max-width: unset;
+			display: block;
+			column-count: 2;
 		}
 		li {
 			width: 100%;
 			line-height: 2;
+
+			@include laptopL {
+				font-size: 14px;
+			}
 		}
 	}
 	.double-column {
+		@include laptopL {
+			font-size: 14px;
+		}
 		@include tablet {
 			margin-top: 35px;
 		}
 		@include phone {
-			font-size: 14px;
+			margin-top: 40px;
+			margin-bottom: 0 !important;
+		}
+		.row {
+			> div {
+				@include phone {
+					margin-bottom: 37px;
+				}
+			}
 		}
 		h4 {
 			max-width: 100%;
@@ -151,26 +174,39 @@
 		@include tablet {
 			margin-top: unset;
 			// margin: 35px auto;
-		}		
+		}
 		@include phone {
 			text-align: left;
 			order: 1;
 		}
 		.footer-cards {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			margin-bottom: 38px;
 			@include tablet {
 				margin-bottom: 35px;
+			}
+			@include phone {
+				justify-content: flex-start;
 			}
 			img {
 				margin: 0 5px;
 			}
 		}
 		.footer-info-content {
+			img.footer-logo {
+				height: 80px;
+				margin-bottom: 40px;
+			}
+			p {
+				margin-bottom: 1.3em;
+			}
 			ul.social-list {
 				display: flex;
 				list-style: none;
 				padding: 0;
-				margin: 0;
+				margin: 0 0 28px 0;
 				li {
 					a {
 						display: block;
@@ -184,6 +220,13 @@
 						}
 					}
 				}
+			}
+		}
+		.footer-sign-in {
+			margin-bottom: 2.5em;
+			a {
+				color: var(--blue);
+				font-weight: 700;
 			}
 		}
 	}
