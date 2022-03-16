@@ -8,6 +8,8 @@ jQuery(document).ready(function ($) {
         $('.product-card__img').matchHeight();
 		$('.product-card h6').matchHeight();
 		$('.block__product-img img').matchHeight();
+		$('.home-cats-item').matchHeight();
+		$('.industries-serve__item').matchHeight();
     });
 
     $('.select').on('click', '.select__head', function () {
