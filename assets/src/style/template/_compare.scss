@@ -1,0 +1,79 @@
+.section-compare {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    border-top: 1px solid var(--light-grey);
+    &__item {
+        position: relative;
+    }h6 a ,
+    h6 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #000000;
+    }
+    .section-compare__price {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+        color: var(--black);
+    }
+    .compare-count {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+
+        /* Neutral/Black */
+
+        color: var(--black);
+    }
+    .clear-all {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: var(--blue);
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: var(--blue);
+            transition-duration: 0.4s;
+        }
+
+        &:hover::after {
+            right: 100%;
+        }
+    }
+    .btn-delete {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/svgicons/deselect.svg);
+        cursor: pointer;
+        transition-duration: .4s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
