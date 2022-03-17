@@ -111,12 +111,17 @@ img {
 	height: auto;
 }
 
+hr {
+	opacity: 1;
+}
+
 .max-w-500 {
 	max-width: 500px;
 }
 
 input,
 button,
+textarea,
 .btn {
 	&:focus {
 		outline: none !important;
@@ -159,6 +164,9 @@ button,
 .fa-user-headset:before {
 	content: "\f82d";
 }
+.fa-inventory:before {
+	content: "\f480";
+}
 
 input {
 	&.form-control {
@@ -170,10 +178,53 @@ input {
 		}
 	}
 }
-input[type=checkbox] {
+input[type="checkbox"] {
 	border-radius: 0 !important;
 }
-input[type=checkbox]:checked {
+input[type="checkbox"]:checked {
 	background-color: var(--green);
 	border-color: var(--green);
+}
+
+input[type="radio"] {
+	&:after {
+		width: 14px;
+		height: 14px;
+		border-radius: 14px;
+		top: -2px;
+		left: -1px;
+		position: relative;
+		background-color: var(--light-grey);
+		content: "";
+		display: inline-block;
+		visibility: visible;
+		border: 1px solid var(--light-grey);
+		box-shadow: 0px 0px 0px 1px #C4C4C4;
+	}
+	&:checked {
+		&:after {
+			background-color: var(--green);
+			box-shadow: 0px 0px 0px 1px var(--green);
+		}
+	}
+}
+
+.list-star {
+	list-style: none;
+	padding-right: 10px;
+	li {
+		height: 18px;
+		width: 18px;
+		margin-right: 5px;
+		background-size: cover;
+		@include phoneS {
+			margin-right: 1px;
+		}
+		&.star-fill {
+			background-image: url(../../img/svgicons/star-fill.svg);
+		}
+		&.star-empty {
+			background-image: url(../../img/svgicons/star-empty.svg);
+		}
+	}
 }

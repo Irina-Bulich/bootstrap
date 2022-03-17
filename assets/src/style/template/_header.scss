@@ -1,13 +1,8 @@
 #top-line {
 	padding: 10.5px 0;
 	transition: var(--transition);
-	z-index: 9999;
-	display: flex;
 	@include tablet {
 		padding: 7.5px 0;
-	}
-	&>.container {
-		z-index: 12;
 	}
 	a {
 		position: relative;
@@ -35,7 +30,6 @@
 	padding: 15.5px 0;
 	border-bottom: 1px solid var(--light-grey);
 	background-color: var(--white);
-	z-index: 10;
 	@include tablet {
 		padding: 10.5px 0;
 	}

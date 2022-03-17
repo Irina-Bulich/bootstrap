@@ -17,7 +17,7 @@
 		<div class="container mb-4">
 			<div class="row mb-5">
 				<div class="d-none d-lg-block col-12 col-lg-3 sitebar-filter border-end">
-					<div class="row sitebar-filter__item border-bottom mt-5 mb-5 pb-5" id="filter-block">
+					<div class="row sitebar-filter__item border-bottom mt-5 mb-5 pb-5">
 						<h5>Categories</h5>
 						<div class="accordion accordion-flush mt-3 mb-1" id="accordionFlushExample">
 							<div class="accordion-item">
@@ -390,7 +390,7 @@
 				</div>
 				<div class="col-12 col-lg-9 p-0">
 					<section class="d-none d-md-block favorites-products border-bottom">
-						<div class="row m-0">
+						<div class="row favorites-products-wrap m-0">
 							<div class="col-3 mb-5 mt-4 border-end">
 								<div  class="product-card text-center m-auto">
 									<div  class="product-card__img">
@@ -431,11 +431,13 @@
 					</section>
 					<section class="breadcrumbs border-bottom pt-4 pb-4 px-3">
 						<div class="row">
-							<div class="col-3 d-flex align-items-center">
-								<ul class="d-flex align-items-center mb-0 p-0">
-									<li>Home</li>
-									<li class="active"><span>/</span><a href="">Desktops</a></li>
-								</ul>
+							<div class="col-6 col-md-3 d-flex align-items-center">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="#">Home</a></li>
+										<li class="breadcrumb-item active" aria-current="page">Desktops</li>
+									</ol>
+								</nav>
 							</div>
 							<div class="d-none d-lg-flex col-9 d-flex align-items-center justify-content-end col-sort">
 								<p>Sort By</p>
@@ -451,7 +453,7 @@
 								<a href="" title="" class="btn-product-list" id="btn-style__list"><img src="../img/svgicons/product-list.svg" alt=""></a>
 								<a href="" title="" class="btn-product-list" id="btn-style__grid"><img src="../img/svgicons/product-grid.svg" alt=""></a>
 							</div>
-							<div class="d-lg-none col-9 d-flex align-items-center justify-content-end col-sort">
+							<div class="d-lg-none col-6 col-md-9 d-flex align-items-center justify-content-end col-sort">
 								<div class="select">
 									<div class="select__head d-flex align-items-center justify-content-center"><img src="../img/svgicons/sliders-h.svg" alt="" class="pe-3">Filter & Sort</div>
 								</div>
@@ -492,7 +494,7 @@
 										<div class="block-details d-flex align-items-center">
 											<div class="stock mr-3">In Stock</div>
 											<div class="shipping">FREE SHIPPING</div>
-											<div class="details">(<a href="" title="">See Details</a>)</div>
+											<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 										</div>									
 									</div>
 									<div class="block__product-price col-3 d-flex flex-column align-items-end mt-3 p-0">
@@ -541,7 +543,7 @@
 											</div>
 											<div class="block-details d-flex flex-wrap flex-column flex-sm-row align-items-sm-center">
 												<div class="shipping">FREE SHIPPING</div>
-												<div class="details">(<a href="" title="">See Details</a>)</div>
+												<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 											</div>
 											<div class="form-check mt-2 item-compare d-flex align-items-center justify-content-start">
 												<input type="checkbox" name="" id="compare-1" value="" class="form-check-input">
@@ -583,7 +585,7 @@
 										<div class="block-details d-flex align-items-center">
 											<div class="stock mr-3">In Stock</div>
 											<div class="shipping">FREE SHIPPING</div>
-											<div class="details">(<a href="" title="">See Details</a>)</div>
+											<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 										</div>									
 									</div>
 									<div class="block__product-price col-3 d-flex flex-column align-items-end mt-3 p-0">
@@ -637,7 +639,7 @@
 											</div>
 											<div class="block-details d-flex flex-wrap flex-column flex-sm-row align-items-sm-center">
 												<div class="shipping">FREE SHIPPING</div>
-												<div class="details">(<a href="" title="">See Details</a>)</div>
+												<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 											</div>
 											<div class="form-check mt-2 item-compare d-flex align-items-center justify-content-start">
 												<input type="checkbox" name="" id="compare-1" value="" class="form-check-input">
@@ -682,7 +684,7 @@
 										<div class="block-details d-flex align-items-center">
 											<div class="stock mr-3">In Stock</div>
 											<div class="shipping">FREE SHIPPING</div>
-											<div class="details">(<a href="" title="">See Details</a>)</div>
+											<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 										</div>									
 									</div>
 									<div class="block__product-price col-3 d-flex flex-column align-items-end mt-3 p-0">
@@ -736,7 +738,7 @@
 											</div>
 											<div class="block-details d-flex flex-wrap flex-column flex-sm-row align-items-sm-center">
 												<div class="shipping">FREE SHIPPING</div>
-												<div class="details">(<a href="" title="">See Details</a>)</div>
+												<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 											</div>
 											<div class="form-check mt-2 item-compare d-flex align-items-center justify-content-start">
 												<input type="checkbox" name="" id="compare-1" value="" class="form-check-input">
@@ -781,7 +783,7 @@
 										<div class="block-details d-flex align-items-center">
 											<div class="stock mr-3">In Stock</div>
 											<div class="shipping">FREE SHIPPING</div>
-											<div class="details">(<a href="" title="">See Details</a>)</div>
+											<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 										</div>									
 									</div>
 									<div class="block__product-price col-3 d-flex flex-column align-items-end mt-3 p-0">
@@ -835,7 +837,7 @@
 											</div>
 											<div class="block-details d-flex flex-wrap flex-column flex-sm-row align-items-sm-center">
 												<div class="shipping">FREE SHIPPING</div>
-												<div class="details">(<a href="" title="">See Details</a>)</div>
+												<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 											</div>
 											<div class="form-check mt-2 item-compare d-flex align-items-center justify-content-start">
 												<input type="checkbox" name="" id="compare-1" value="" class="form-check-input">
@@ -880,7 +882,7 @@
 										<div class="block-details d-flex align-items-center">
 											<div class="stock mr-3">In Stock</div>
 											<div class="shipping">FREE SHIPPING</div>
-											<div class="details">(<a href="" title="">See Details</a>)</div>
+											<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 										</div>									
 									</div>
 									<div class="block__product-price col-3 d-flex flex-column align-items-end mt-3 p-0">
@@ -934,7 +936,7 @@
 											</div>
 											<div class="block-details d-flex flex-wrap flex-column flex-sm-row align-items-sm-center">
 												<div class="shipping">FREE SHIPPING</div>
-												<div class="details">(<a href="" title="">See Details</a>)</div>
+												<div class="details" id="see-details">(<a href="" title="">See Details</a>)</div>
 											</div>
 											<div class="form-check mt-2 item-compare d-flex align-items-center justify-content-start">
 												<input type="checkbox" name="" id="compare-1" value="" class="form-check-input">

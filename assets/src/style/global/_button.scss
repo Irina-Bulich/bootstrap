@@ -78,7 +78,7 @@
 			position: absolute;
 			font-family: "Font Awesome 5 Pro";
 			content: "\2b";
-			bottom: 58%;
+			bottom: 62%;
 			left: 9px;
 			width: 5px;
 			height: 5px;
@@ -130,33 +130,6 @@
 			color: var(--white);
 			background-color: var(--green);
 			opacity: 0.85;
-		}
-	}
-}
-.view-more-cat,
-.view-more {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 19px;
-	color: var(--blue);
-	position: relative;
-	padding-left: 30px;
-	cursor: pointer;
-
-	&::after {
-		position: relative;
-		content: "+";
-		left: -97px;
-		top: -1px;
-		color: var(--blue);
-		transition-duration: .4s;
-	}
-
-	&.open {
-		&::after {
-			content: "-";
 		}
 	}
 }

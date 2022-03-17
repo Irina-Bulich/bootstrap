@@ -6,7 +6,7 @@
 	--green: #44ba26;
 	--orange: #ff6b35;
 	--black: #272629;
-	--darker-grey: #727880;	
+	--darker-grey: #727880;
 	--dark-grey: #909bab;
 	--grey: #c3cbd6;
 	--light-grey: #eaeef3;
@@ -34,7 +34,13 @@ $theme-colors: (
 	"danger": #d23c0f,
 	"light": #ffffff,
 	"dark": #272629,
+	"grey": #c3cbd6,
+	"light-grey": #eaeef3,
+	"lightest-grey": #f6f8fa,
+	"dark-grey": #909bab,
+	"darker-grey": #727880,
 );
+$table-hover-bg: #f6f8fa;
 
 // @see https://getbootstrap.com/docs/5.1/customize/options/
 $spacer: 1rem;
@@ -85,9 +91,6 @@ $container-max-widths: (
 // @include font('rubik-ag', normal, 400, '../fonts/rubik-400.woff2');
 // @include font('rubik-ag', normal, 500, '../fonts/rubik-500.woff2');
 // @include font('rubik-ag', normal, 700, '../fonts/rubik-700.woff2');
-
-// @include font('Font Awesome 6 Free', normal, 400, '../fonts/fontawesome/fa-regular-400.woff2');
-// @include font('Font Awesome 6 Free', normal, 900, '../fonts/fontawesome/fa-solid-900.woff2');
 
 @include font('Font Awesome 5 Brands', normal, 400, '../fonts/fontawesome/fa-brands-400.woff2');
 @include font('Font Awesome 5 Duotone', normal, 900, '../fonts/fontawesome/fa-duotone-900.woff2');
@@ -141,3 +144,34 @@ $display-font-weight: 700;
 $display-line-height: 1.2;
 
 $lead-font-weight: 400;
+
+
+@import '../../../../node_modules/bootstrap/scss/_functions';
+@import '../../../../node_modules/bootstrap/scss/_variables.scss';
+@import '../../../../node_modules/bootstrap/scss/_utilities.scss';
+
+$utilities: map-merge(
+  $utilities, 
+  (
+    "border": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+    "border-top": map-merge(
+      map-get($utilities, "border-top"),
+      ( responsive: true ),
+    ),
+    "border-end": map-merge(
+      map-get($utilities, "border-end"),
+      ( responsive: true ),
+    ),
+    "border-bottom": map-merge(
+      map-get($utilities, "border-bottom"),
+      ( responsive: true ),
+    ),
+    "border-start": map-merge(
+      map-get($utilities, "border-start"),
+      ( responsive: true ),
+    ),
+  )
+);
