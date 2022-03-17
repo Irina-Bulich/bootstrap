@@ -6,6 +6,63 @@
     bottom: 0;
     z-index: 999;
     border-top: 1px solid var(--light-grey);
+    @include laptopM {
+        max-height: 30vh;
+        overflow-y: auto;
+    }
+    & > .container > .row {
+        @include laptopM {
+            margin: 0;
+            padding: 10px 0 0!important;
+            overflow: hidden;
+        }
+        &>div {
+            @media (max-width: 575px) {
+                max-width: 400px;
+                margin: auto;
+            }
+            &:last-child {
+                @include laptopM {
+                    order: 2;
+                    margin-bottom: 1rem;
+                }
+                @media (max-width: 575px) {
+                    order: 5;
+                }
+                @media (max-width: 575px) {
+                    margin-bottom: 0;
+                }
+            }
+            &:nth-child(2) {
+                @include laptopM {
+                    order: 3;
+                }
+                @media (max-width: 575px) {
+                    margin-bottom: 1rem;
+                }
+            }
+            &:nth-child(3) {
+                @include laptopM {
+                    order: 3;
+                }
+                @media (max-width: 575px) {
+                    margin-bottom: 1rem;
+                }
+            }
+            &:first-child {
+                @include laptopM {
+                    order: 1;
+                    margin-bottom: 1rem;
+                }
+                @media (max-width: 575px) {
+                    margin-bottom: 1rem;
+                }
+            }
+            .btn.btn-primary {
+                margin-left: auto;
+            }
+        }
+    }
     &__item {
         position: relative;
     }h6 a ,
@@ -17,6 +74,9 @@
         line-height: 19px;
 
         color: #000000;
+        @include phone {
+            font-size: 14px;
+        }
     }
     .section-compare__price {
         font-family: 'Inter';
