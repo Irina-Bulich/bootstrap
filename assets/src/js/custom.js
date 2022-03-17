@@ -3,15 +3,38 @@ jQuery(document).ready(function ($) {
 	$('.search-mobile-link').click(function () {
 		$('.search-form').toggle(300);
 	});
-
+	function scroll_header() {
+		if($('#filter-block').length > 0 ) {
+			$(window).scroll(function() {
+				var height = $(window).scrollTop();
+				if(height > 50){
+				$('body').addClass('body-scroll');
+				} else{
+				$('body').removeClass('body-scroll');
+				}
+			});
+		}
+	}
+	if ($(window).width() <= '980'){
+		scroll_header();
+	}
+	$(window).resize(function() {
+		if ($(window).width() <= '980'){
+			scroll_header();
+		}
+	});
+	
 	$(function () {
 		$('.product-card__img').matchHeight();
+		$('.product-card h6').matchHeight();
+		$('.block__product-img img').matchHeight();
 		$('.home-cats-item').matchHeight();
 		$('.industries-serve__item').matchHeight();
 		$('.stock-shipping-info-item').matchHeight();
 		$('.product__accessories-item').matchHeight();
 		$('.favorites-products .product-card__img').matchHeight();
 		$('.favorites-products h6').matchHeight();
+		$('.section-compare__item').matchHeight();
 	});
 
 	$('.select').on('click', '.select__head', function () {
@@ -66,7 +89,56 @@ jQuery(document).ready(function ($) {
 	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 		return new bootstrap.Tooltip(tooltipTriggerEl)
 	})
+	//view more	
+	jQuery('.sitebar-filter__item ul').each(function() {
+		let el = jQuery(this);
 
+		el.find('li')
+		.filter(function( index ) {
+			return (index > 5) ;
+		})
+			.hide();
+
+	});
+
+	jQuery('.view-more').click(function() {		 
+		let btn = jQuery(this);
+		let el = btn.prev();
+		btn.toggleClass('open');
+		el.each(function() {
+	
+		el.find('li')
+		.filter(function( index ) {
+			return (index > 5 ) ;
+		})
+			.slideToggle();  
+
+		});
+	});
+	jQuery('#accordionFlushExample').each(function() {
+		let el = jQuery(this);
+
+		el.find('.accordion-item')
+		.filter(function( index ) {
+			return (index > 5) ;
+		})
+			.hide();
+
+	});
+	jQuery('.view-more-cat').click(function() {		 
+		let btn = jQuery(this);
+		let el = btn.prev();
+		btn.toggleClass('open');
+		el.each(function() {
+	
+		el.find('.accordion-item')
+		.filter(function( index ) {
+			return (index > 5 ) ;
+		})
+			.slideToggle();  
+
+		});
+	});
 });
 
 
