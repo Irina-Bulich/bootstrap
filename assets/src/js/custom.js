@@ -3,7 +3,26 @@ jQuery(document).ready(function ($) {
 	$('.search-mobile-link').click(function () {
 		$('.search-form').toggle(300);
 	});
-
+	function scroll_header() {
+		if($('#filter-block').length > 0 ) {
+			$(window).scroll(function() {
+				var height = $(window).scrollTop();
+				if(height > 50){
+				$('body').addClass('body-scroll');
+				} else{
+				$('body').removeClass('body-scroll');
+				}
+			});
+		}
+	}
+	if ($(window).width() <= '980'){
+		scroll_header();
+	}
+	$(window).resize(function() {
+		if ($(window).width() <= '980'){
+			scroll_header();
+		}
+	});
     $(function() {
         $('.product-card__img').matchHeight();
 		$('.product-card h6').matchHeight();
