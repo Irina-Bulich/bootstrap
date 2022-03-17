@@ -6,12 +6,12 @@
     bottom: 0;
     z-index: 999;
     border-top: 1px solid var(--light-grey);
-    @include laptopM {
+    @media (max-width: 1399px) {
         max-height: 30vh;
         overflow-y: auto;
     }
     & > .container > .row {
-        @include laptopM {
+        @media (max-width: 1399px) {
             margin: 0;
             padding: 10px 0 0!important;
             overflow: hidden;
@@ -22,19 +22,17 @@
                 margin: auto;
             }
             &:last-child {
-                @include laptopM {
+                @media (max-width: 1399px) {
                     order: 2;
                     margin-bottom: 1rem;
                 }
                 @media (max-width: 575px) {
                     order: 5;
-                }
-                @media (max-width: 575px) {
                     margin-bottom: 0;
                 }
             }
             &:nth-child(2) {
-                @include laptopM {
+                @media (max-width: 1399px) {
                     order: 3;
                 }
                 @media (max-width: 575px) {
@@ -42,7 +40,7 @@
                 }
             }
             &:nth-child(3) {
-                @include laptopM {
+                @media (max-width: 1399px) {
                     order: 3;
                 }
                 @media (max-width: 575px) {
@@ -50,7 +48,7 @@
                 }
             }
             &:first-child {
-                @include laptopM {
+                @media (max-width: 1399px) {
                     order: 1;
                     margin-bottom: 1rem;
                 }

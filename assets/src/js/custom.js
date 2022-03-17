@@ -10,6 +10,7 @@ jQuery(document).ready(function ($) {
 		$('.block__product-img img').matchHeight();
 		$('.home-cats-item').matchHeight();
 		$('.industries-serve__item').matchHeight();
+		$('.section-compare__item').matchHeight();
     });
 
     $('.select').on('click', '.select__head', function () {
