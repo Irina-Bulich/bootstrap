@@ -1,0 +1,414 @@
+.product {
+	&__head {
+		.product__pill_row {
+			width: calc(100% - (8px * 2));
+		}
+		.best-seller-pill {
+			font-weight: 700;
+			font-size: clampFunction(16, 13);
+			line-height: 1.18;
+			text-transform: uppercase;
+			background-color: var(--blue);
+			color: var(--white);
+			padding: clampFunction(6, 4) clampFunction(15, 8);
+			white-space: nowrap;
+		}
+		.discount-pill {
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 1.25;
+			color: var(--white);
+			background-color: var(--orange);
+			padding: 3px 20px;
+			white-space: nowrap;
+		}
+		.leave-a-review {
+			color: var(--blue);
+			font-weight: 500;
+			line-height: 1.2;
+			font-size: 14px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.product-title {
+			font-weight: 500;
+			font-size: clampFunction(22, 16);
+			line-height: 1.23;
+		}
+		.product-price {
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 1.2;
+			text-transform: uppercase;
+			.old-price {
+				font-weight: 400;
+				font-size: 20px;
+				text-decoration-line: line-through;
+				color: var(--dark-grey);
+			}
+		}
+		.product__stock-shipping-info_row {
+			.stock-shipping-info-item {
+				padding-bottom: 28px;
+				> i {
+					color: var(--grey);
+					font-size: 24px;
+					line-height: 1;
+					@include fontsize(24px, 22px, 20px);
+				}
+				h5 {
+					color: var(--green);
+					font-weight: 700;
+					line-height: 1.2;
+					@include fontsize(14px, 13px, 12px);
+				}
+				p {
+					line-height: 1.2;
+					margin-bottom: 0;
+					@include fontsize(14px, 13px, 12px);
+					&:last-child {
+						margin-bottom: 0;
+					}
+					span {
+						font-weight: 700;
+						color: var(--green);
+					}
+					i {
+						color: var(--dark-grey);
+					}
+				}
+				.time {
+					display: inline-flex;
+					line-height: 1.2;
+					@include fontsize(12px, 11px, 10px);
+				}
+				a {
+					color: var(--white);
+					background-color: var(--green);
+					font-weight: 700;
+					line-height: 1.25;
+					padding: 5px;
+					width: 101%;
+					left: -1px;
+					bottom: -1px;
+					@include fontsize(12px, 11px, 10px);
+				}
+			}
+		}
+		.authorized-dealer-item {
+			h5 {
+				color: var(--blue);
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 1.2;
+				text-transform: uppercase;
+				@include exfontsize(18px, 16px, 14px, 13px, 12px);
+				max-width: 150px;
+			}
+			img {
+				@include phone {
+					width: 22px;
+					height: 22px;
+				}
+			}
+		}
+		h5.product__quantity-title {
+			font-weight: 700;
+			line-height: 160%;
+			@include fontsize(14px, 13px, 12.5px);
+		}
+		.product__quantity {
+			max-width: 203px;
+			.input-group {
+				width: 203px;
+				@include phone {
+					width: 165px;
+				}
+				input {
+					&::-webkit-outer-spin-button,
+					&::-webkit-inner-spin-button {
+						-webkit-appearance: none;
+						margin: 0;
+					}
+					&[type="number"] {
+						-moz-appearance: textfield;
+						margin-left: 0 !important;
+						height: 50px;
+						width: 110px;
+						font-size: 16px;
+						font-weight: 700;
+						@include tablet {
+							font-size: 14px;
+							height: 40px;
+							width: 90px;
+						}
+					}
+					&[type="button"] {
+						width: 46px;
+						height: 50px;
+						font-size: 30px;
+						line-height: 1;
+						transition: var(--transition);
+						@include tablet {
+							width: 37px;
+							height: 40px;
+							font-size: 25px;
+						}
+						&:hover {
+							background-color: var(--light-grey) !important;
+						}
+					}
+				}
+			}
+		}
+		.add-to-wishlist {
+			a {
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 1.2;
+			}
+		}
+		.product__buy-buttons {
+			.btn {
+				max-width: 100%;
+				font-weight: 600;
+				height: 50px;
+				transition: var(--transition);
+				&:hover {
+					opacity: 0.85;
+				}
+				&.btn-dark {
+					font-weight: 400;
+					letter-spacing: 0.025em;
+					font-size: 20px;
+					@include laptopL {
+						font-size: 16px;
+					}
+					img {
+						margin-left: 8px;
+						@include laptopL {
+							width: 50px;
+						}
+					}
+				}
+			}
+		}
+
+		.product__protect-investment {
+			h5 {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 1.1875;
+				text-transform: uppercase;
+			}
+			label {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 19px;
+				cursor: pointer;
+			}
+			input {
+				height: 19px;
+			}
+		}
+	}
+	.product-sku {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.25;
+		color: var(--dark-grey);
+		span {
+			position: relative;
+			padding-right: 10px;
+			margin-right: 10px;
+			&:after {
+				content: "";
+				width: 1px;
+				height: 15px;
+				background-color: var(--dark-grey);
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+				margin-right: 0;
+				&:after {
+					content: unset;
+				}
+			}
+		}
+	}
+	&__text-description {
+		* {
+			line-height: 1.2;
+		}
+		ul {
+			column-count: 2;
+			column-gap: 50px;
+			@include tablet {
+				column-count: 1;
+				column-gap: unset;
+			}
+		}
+	}
+
+	&__accordion-info {
+		.accordion {
+			border-top: 1px solid var(--grey);
+			border-bottom: 1px solid var(--grey);
+			.accordion-item {
+				border-color: var(--grey);
+				.accordion-header {
+					.accordion-button {
+						font-style: normal;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 160%;
+						text-transform: uppercase;
+						padding: 21px 0;
+						@include phone {
+							font-size: 14px;
+						}
+						&:not(.collapsed) {
+							color: var(--textcolor);
+							background-color: transparent;
+							box-shadow: unset;
+						}
+						&:after {
+							content: "\f107";
+							font-family: "Font Awesome 5 Pro";
+							font-weight: 400;
+							font-size: 20px;
+							line-height: 1;
+							background: 0 0;
+							color: var(--blue);
+							width: unset;
+						}
+					}
+				}
+				.accordion-collapse {
+					.accordion-body {
+						padding-left: 0;
+						padding-right: 0;
+						* {
+							line-height: 1.2;
+						}
+						h3 {
+							margin-bottom: 0.65em;
+						}
+						h4 {
+							font-weight: 600;
+							font-size: clampFunction(16, 14);
+							text-transform: uppercase;
+							margin-bottom: 1.1em;
+						}
+						p {
+							&:last-child {
+								margin-bottom: 0;
+							}
+						}
+						a:not(.btn) {
+							text-decoration: underline;
+						}
+						.download-box {
+							a {
+								font-size: clampFunction(16, 14);
+								font-weight: 700;
+								position: relative;
+								display: flex;
+								align-items: center;
+								margin-bottom: 2em;
+								text-decoration: none;
+								&:last-child {
+									margin-bottom: 0;
+								}
+								&:before {
+									content: "\f15b";
+									font-family: "Font Awesome 5 Pro";
+									font-weight: 400;
+									font-size: 24px;
+									line-height: 24px;
+									margin-right: 15px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&__ratings-and-reviews {
+		h2 {
+			font-weight: 700;
+			font-size: 26px;
+			line-height: 1.2;
+			text-transform: uppercase;
+		}
+		h5 {
+			font-weight: 700;
+		}
+		form.form__ratings-and-reviews {
+			@include desktop {
+				max-width: 540px;
+			}
+		}
+		.product__ratings-and-reviews-item {
+			p {
+				margin-bottom: 0.8em;
+			}
+			.author-date {
+				color: var(--dark-grey);
+				font-size: clampFunction(16, 14);
+				font-style: italic;
+			}
+		}
+	}
+}
+
+.product__accessories {
+	.product__accessories-item {
+		max-width: 350px;
+		margin: auto;
+		.accessories-img-wrap {
+			img {
+				width: 92px;
+				min-width: 92px;
+				@include laptopM {
+					width: 75px;
+					min-width: 75px;
+				}
+			}
+		}
+		.accessories-content-wrap {
+			.accessories-entry-title {
+				line-height: 1.2;
+				font-size: 16px;
+				@include laptopM {
+					font-size: 14px;
+				}
+			}
+			.accessories-price {
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 1.2;
+			}
+		}
+	}
+	.btn-view-all-accessories {
+		padding: 0.575rem 0.85rem;
+	}
+}
+
+.related-products {
+	h2 {
+		font-weight: 700;
+			font-size: 26px;
+			line-height: 1.2;
+			text-transform: uppercase;
+	}
+	.related-products__item {
+
+	}
+}
