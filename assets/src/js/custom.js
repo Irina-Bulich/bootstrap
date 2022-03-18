@@ -90,12 +90,12 @@ jQuery(document).ready(function ($) {
 		return new bootstrap.Tooltip(tooltipTriggerEl)
 	})
 	//view more	
-	jQuery('.sitebar-filter__item ul').each(function() {
+	jQuery('.sitebar-filter__item ul, .filter-toggle-list').each(function() {
 		let el = jQuery(this);
-
+		let view = +el.data('view');
 		el.find('li')
 		.filter(function( index ) {
-			return (index > 5) ;
+			return (index > view) ;
 		})
 			.hide();
 
@@ -104,12 +104,14 @@ jQuery(document).ready(function ($) {
 	jQuery('.view-more').click(function() {		 
 		let btn = jQuery(this);
 		let el = btn.prev();
+		let view = +el.data('view');
+		
 		btn.toggleClass('open');
 		el.each(function() {
 	
 		el.find('li')
 		.filter(function( index ) {
-			return (index > 5 ) ;
+			return (index > view ) ;
 		})
 			.slideToggle();  
 

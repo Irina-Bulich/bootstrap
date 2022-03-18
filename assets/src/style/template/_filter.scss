@@ -48,14 +48,15 @@
     display: block;
     transition: .2s ease-in;
     font-size: 20px;
-
+    transform-origin: center;
     @include tablet {
         display: none;
     }
 }
 
 .select__head.open::after {
-    transform: translateY(50%) rotate(180deg);
+    transform: translateY(150%) rotate(180deg)!important;
+    transform-origin: center;
 }
 
 .select__list {
@@ -132,7 +133,7 @@
         form.form-filter {
             @include tablet {
                 overflow-y: hidden;
-                height: 60vh;
+                height: 65vh;
                 
             }
             .row {
@@ -213,6 +214,10 @@
     }
     .block-res-show {
         background: #EAEEF3;
+        .row {
+            max-width: 600px;
+            margin: auto;
+        }
     }
 }
 .body-scroll {
