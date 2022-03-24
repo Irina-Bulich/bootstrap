@@ -137,3 +137,125 @@
 		}
 	}
 }
+
+#mobile-menu {
+	padding: 0;
+	.navbar-collapse {
+		padding: 10px 0;
+		height: calc(100vh - 100px - 146px);
+		overflow: auto;
+		&::-webkit-scrollbar {
+			width: 3px;
+		}
+		ul.main-menu-nav {
+			padding: 10px 0;
+			li.nav-item {
+				a.nav-link {
+					padding: 13px 0;
+				}
+				a {
+					color: var(--textcolor);
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					&:hover {
+						color: var(--blue);
+					}
+					&.dropdown-toggle {
+						&:after {
+							content: "\f054";
+							font-size: 16px;
+							color: var(--blue);
+							margin-right: 8px;
+						}
+						&.show {
+							&:after {
+								content: "\f078";
+							}
+						}
+					}
+				}
+				ul.dropdown-menu {
+					border: none;
+					padding-top: 0;
+					margin-top: 0;
+					padding-left: 8px;
+					li {
+						a {
+							padding: 0.25rem 0.5rem;
+							font-size: 14px;
+
+							&.dropdown-toggle {
+								&:hover {
+									&:after {
+										color: var(--white);
+									}
+								}
+							}
+							&:focus {
+								background-color: unset;
+							}
+							&:hover {
+								background-color: var(--blue);
+								color: var(--white);
+							}
+						}
+					}
+				}
+			}
+		}
+		ul.bottom-menu-nav {
+			background-color: var(--lightest-grey);
+			width: 100%;
+			padding: 19px 0.75rem;
+			position: absolute;
+			left: 0;
+			bottom: -146px;
+			z-index: 9;
+			justify-content: center;
+			align-items: center;
+			li.nav-item {
+				width: 100%;
+				max-width: 696px;
+				@include phone {
+					max-width: 516px;
+				}
+				@media (max-width: 575px) {
+					max-width: 100%;
+				}
+				&:first-child {
+					> a {
+						color: var(--textcolor) !important;
+						font-weight: 700;
+						&:before {
+							content: "\f82d";
+						}
+					}
+				}
+				> a {
+					color: var(--textcolor);
+					padding: 6px 0;
+					&:before {
+						content: "";
+						font-family: "Font Awesome 5 Pro";
+						font-weight: 400;
+						margin-right: 12px;
+					}
+					&[href^="tel:"] {
+						&:before {
+							content: "\f095";
+						}
+					}
+					&[href^="mailto:"] {
+						&:before {
+							content: "\f0e0";
+						}
+					}
+					&:hover {
+						color: var(--blue);
+					}
+				}
+			}
+		}
+	}
+}
