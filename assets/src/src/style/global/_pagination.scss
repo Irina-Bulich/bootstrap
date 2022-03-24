@@ -1,0 +1,37 @@
+.pagination-row {
+    .all-pages {
+        color: var(--grey);
+        @include laptopM {
+            font-size: 12px;
+        }
+    }
+    .page-item {
+        .page-link {
+            border: none;
+            color: var(--dark-grey);
+            font-weight: 700;
+            &:focus,
+            &:hover {
+                background: none;
+                box-shadow: none;
+                color: var(--green);
+            }
+            &.curent {
+               color: var(--green);
+            }
+        }
+    }
+    .per-page {
+        @include laptopM {
+            font-size: 12px;
+        }
+    }
+}
+.fa-angle-left:before {
+    content: '\f104';
+    font-family: "Font Awesome 5 Pro";
+}
+.fa-angle-right:before {
+    content: '\f105';
+    font-family: "Font Awesome 5 Pro";
+}

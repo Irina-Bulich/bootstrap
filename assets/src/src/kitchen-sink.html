@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	@@include('template/head.html',{
+	'title': 'Kitchen Sink',
+	'description': 'Description'
+	})
+</head>
+
+<body>
+
+	@@include('template/header.html')
+	@@include('template/main-menu.html')
+
+	<main id="main-content">
+
+		<section id="homeHeroCarousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+
+				<div class="carousel-item active" style="background-image: url(/img/hero-slide.jpg);">
+					<div class="home-hero-content-wrap container d-none d-md-block ">
+						<div class="container">
+							<div class="row">
+								<div class="home-hero-content">
+									<h1 class="hero-title">24/7 Support Any Time of the Day So You Can Resume Business Fast</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+										et dolore magna aliqua.</p>
+									<a href="#" class="btn btn-primary">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" style="background-image: url(/img/hero-slide.jpg);">
+					<div class="home-hero-content-wrap container d-none d-md-block ">
+						<div class="container">
+							<div class="row">
+								<div class="home-hero-content">
+									<h1 class="hero-title">24/7 Support Any Time of the Day So You Can Resume Business Fast</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+										et dolore magna aliqua.</p>
+									<a href="#" class="btn btn-primary">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" style="background-image: url(/img/hero-slide.jpg);">
+					<div class="home-hero-content-wrap container d-none d-md-block ">
+						<div class="container">
+							<div class="row">
+								<div class="home-hero-content">
+									<h1 class="hero-title">24/7 Support Any Time of the Day So You Can Resume Business Fast</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+										et dolore magna aliqua.</p>
+									<a href="#" class="btn btn-primary">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container carousel-indicators-wrap">
+				<div class="row">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#homeHeroCarousel" data-bs-slide-to="0" class="active"
+							aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#homeHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#homeHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#homeHeroCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#homeHeroCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</section>
+
+		<section class="bg-lightest-grey py-5">
+			<div class="container pt-5">
+				<div class="row text-title-row justify-content-center text-center">
+					<div class="col">
+						<h2 class="entry-title">This is the Center Headline + Text <span>Region</span></h2>
+						<p class="max-w-500 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="home_cats_section" class="bg-lightest-grey">
+			<div class="container">
+				<div class="row home-cats-row">
+					<div class="col-6">
+						<div class="home-cats-item large-cats-item">
+							<div class="cats-img-wrap">
+								<img src="img/lenovo-desktop-1.png" alt="Desktop Computers">
+							</div>
+							<div class="cats-text-wrap">
+								<h3>Desktop Computers</h3>
+								<a href="#" title="" class="btn btn-outline-dark btn-view-product">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="home-cats-item large-cats-item">
+							<div class="cats-img-wrap">
+								<img src="img/hp-laptop.png" alt="Laptops">
+							</div>
+							<div class="cats-text-wrap">
+								<h3>Laptops</h3>
+								<a href="#" title="" class="btn btn-outline-dark btn-view-product">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4">
+						<div class="home-cats-item">
+							<div class="cats-img-wrap">
+								<img src="img/epson-printer.png" alt="Printers">
+							</div>
+							<div class="cats-text-wrap">
+								<h3>Printers</h3>
+								<a href="#" title="" class="btn btn-outline-dark btn-view-product">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4">
+						<div class="home-cats-item">
+							<div class="cats-img-wrap">
+								<img src="img/LG-Monitor.png" alt="Monitors">
+							</div>
+							<div class="cats-text-wrap">
+								<h3>Monitors</h3>
+								<a href="#" title="" class="btn btn-outline-dark btn-view-product">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="home-cats-item accent-cats-item">
+							<div class="cats-text-wrap">
+								<h2 class="entry-title">We Also Offer IT Solutions so You Can <span>Focus on What Matters</span></h2>
+								<a href="#" title="" class="btn btn-outline-light btn-view-product">View Solutions</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-white pt-5 pb-5">
+			<div class="container  pt-4 pb-4 pt-lg-5">
+
+				<div class="row text-title-row justify-content-center text-center">
+					<div class="col">
+						<h2 class="entry-title">Our Network of <span>Partners</span></h2>
+					</div>
+				</div>
+				<div class="row partners-logo g-0 pt-4 mb-5">
+
+					<div class="col-6 col-lg-3">
+						<a href="#" class="partners-logo__item d-flex justify-content-center align-items-center p-3 p-md-4">
+							<div class="partners-logo__img-wrap">
+								<img src="img/Microsoft.png" alt="Microsoft">
+							</div>
+							<div
+								class="partners-logo__back-side d-flex flex-column justify-content-end bg-primary text-white p-3 p-md-4">
+								<p class="mb-1">Shop</p>
+								<h3 class="mb-0">Microsoft</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-6 col-lg-3">
+						<a href="#" class="partners-logo__item d-flex justify-content-center align-items-center p-3 p-md-4">
+							<div class="partners-logo__img-wrap">
+								<img src="img/Hewlett_Packard_Enterprise_logo 1.png" alt="Hewlett Packard">
+							</div>
+							<div
+								class="partners-logo__back-side d-flex flex-column justify-content-end bg-primary text-white p-3 p-md-4">
+								<p class="mb-1">Shop</p>
+								<h3 class="mb-0">Hewlett Packard</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-6 col-lg-3">
+						<a href="#" class="partners-logo__item d-flex justify-content-center align-items-center p-3 p-md-4">
+							<div class="partners-logo__img-wrap">
+								<img src="img/Samsung.png" alt="Samsung">
+							</div>
+							<div
+								class="partners-logo__back-side d-flex flex-column justify-content-end bg-primary text-white p-3 p-md-4">
+								<p class="mb-1">Shop</p>
+								<h3 class="mb-0">Samsung</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-6 col-lg-3">
+						<a href="#" class="partners-logo__item d-flex justify-content-center align-items-center p-3 p-md-4">
+							<div class="partners-logo__img-wrap">
+								<img src="img/Sony.png" alt="Sony">
+							</div>
+							<div
+								class="partners-logo__back-side d-flex flex-column justify-content-end bg-primary text-white p-3 p-md-4">
+								<p class="mb-1">Shop</p>
+								<h3 class="mb-0">Sony</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-6 col-lg-3">
+						<a href="#" class="partners-logo__item d-flex justify-content-center align-items-center p-3 p-md-4">
+							<div class="partners-logo__img-wrap">
+								<img src="img/19 1.png" alt="Sennheiser">
+							</div>
+							<div
+								class="partners-logo__back-side d-flex flex-column justify-content-end bg-primary text-white p-3 p-md-4">
+								<p class="mb-1">Shop</p>
+								<h3 class="mb-0">Sennheiser</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-6 col-lg-3">
+						<a href="#" class="partners-logo__item d-flex justify-content-center align-items-center p-3 p-md-4">
+							<div class="partners-logo__img-wrap">
+								<img src="img/Lenovo 1.png" alt="Lenovo">
+							</div>
+							<div
+								class="partners-logo__back-side d-flex flex-column justify-content-end bg-primary text-white p-3 p-md-4">
+								<p class="mb-1">Shop</p>
+								<h3 class="mb-0">Lenovo</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-6 col-lg-3">
+						<a href="#" class="partners-logo__item d-flex justify-content-center align-items-center p-3 p-md-4">
+							<div class="partners-logo__img-wrap">
+								<img src="img/LG 1.png" alt="LG">
+							</div>
+							<div
+								class="partners-logo__back-side d-flex flex-column justify-content-end bg-primary text-white p-3 p-md-4">
+								<p class="mb-1">Shop</p>
+								<h3 class="mb-0">LG</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-6 col-lg-3">
+						<a href="#" class="partners-logo__item d-flex justify-content-center align-items-center p-3 p-md-4">
+							<div class="partners-logo__img-wrap">
+								<img src="img/Motorola.png" alt="Motorola">
+							</div>
+							<div
+								class="partners-logo__back-side d-flex flex-column justify-content-end bg-primary text-white p-3 p-md-4">
+								<p class="mb-1">Shop</p>
+								<h3 class="mb-0">Motorola</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row text-center">
+					<div class="col">
+						<a href="#" class="btn-lined">SHOP ALL BRANDS</a>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+		<section class="industries-serve-section">
+			<div class="container">
+				<div class="row industries-serve">
+					<div class="col-12 col-lg-6 mb-4">
+						<div class="industries-serve__item bg-primary text-white d-flex flex-column justify-content-center">
+							<h2 class="entry-title">Industries We <br>Serve</h2>
+							<p class="max-w-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-4">
+						<div class="industries-serve__item">
+							<div class="industries-serve__content text-center">
+								<i class="fal fa-school"></i>
+								<h3>Education</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+							<div class="industries-serve__link">
+								<a href="#">Learn More <i class="fal fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-3 mb-4">
+						<div class="industries-serve__item">
+							<div class="industries-serve__content text-center">
+								<i class="fal fa-landmark"></i>
+								<h3>Federal Integrators</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+							<div class="industries-serve__link">
+								<a href="#">Learn More <i class="fal fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-3 mb-4">
+						<div class="industries-serve__item">
+							<div class="industries-serve__content text-center">
+								<i class="fal fa-building"></i>
+								<h3>Corporate</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+							<div class="industries-serve__link">
+								<a href="#">Learn More <i class="fal fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-3 mb-4">
+						<div class="industries-serve__item">
+							<div class="industries-serve__content text-center">
+								<i class="fal fa-store"></i>
+								<h3>Small Businesses</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+							<div class="industries-serve__link">
+								<a href="#">Learn More <i class="fal fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-3 mb-4">
+						<div class="industries-serve__item">
+							<div class="industries-serve__content text-center">
+								<i class="fal fa-hotel"></i>
+								<h3>Hospitality</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+							<div class="industries-serve__link">
+								<a href="#">Learn More <i class="fal fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-3 mb-4">
+						<div class="industries-serve__item">
+							<div class="industries-serve__content text-center">
+								<i class="fal fa-plane"></i>
+								<h3>Aerospace</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+							<div class="industries-serve__link">
+								<a href="#">Learn More <i class="fal fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-0 pb-5">
+			<div class="container pb-0 pb-lg-4">
+				<div class="row text-l_img-r pb-5">
+					<div class="col-lg-6 order-2 order-lg-1 align-self-lg-center">
+						<h2 class="entry-title"><span>We Are Ready</span> to Outfit Your Business.</h2>
+						<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<a href="#" class="btn btn-green">Schedule a Consultation</a>
+					</div>
+					<div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end mb-5 mb-lg-0">
+						<div class="img-wrap px-4 px-md-0">
+							<img src="img/we-are-ready.jpg" alt="We are ready...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-lightest-grey pt-5 pb-4">
+			<div class="container pt-4 pb-0 pb-lg-4">
+				<div class="row img-l_text-r pb-5">
+					<div class="col-lg-6 order-1 d-flex justify-content-center justify-content-lg-start mb-5 mb-lg-0">
+						<div class="img-wrap px-4 px-md-0">
+							<img src="img/we-are-ready.jpg" alt="We are ready...">
+						</div>
+					</div>
+					<div class="col-lg-6 order-2 align-self-lg-center">
+						<h2 class="entry-title"><span>We Are Ready</span> to Outfit Your Business.</h2>
+						<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<a href="#" class="btn btn-green">Schedule a Consultation</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pt-5 pb-5">
+			<div class="container pt-4 pb-lg-4">
+				<div class="row text-l_video-r pb-5">
+					<div class="col-lg-6 order-2 order-lg-1 align-self-lg-center">
+						<h2 class="entry-title"><span>We Are Ready</span> to Outfit Your Business.</h2>
+						<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<a href="#" class="btn btn-green">Schedule a Consultation</a>
+					</div>
+					<div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end mb-5 mb-lg-0">
+						<div class="video-wrap">
+							<video controls>
+								<source src=https://samplelib.com/lib/preview/mp4/sample-5s.mp4 type=video/mp4>
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-lightest-grey pt-5 pb-4">
+			<div class="container pt-4 pb-0 pb-lg-4">
+				<div class="row video-l_text-r pb-5">
+					<div class="col-lg-6 order-1 d-flex justify-content-center justify-content-lg-start mb-5 mb-lg-0">
+						<div class="video-wrap">
+							<video controls>
+								<source src=https://samplelib.com/lib/preview/mp4/sample-5s.mp4 type=video/mp4>
+							</video>
+						</div>
+					</div>
+					<div class="col-lg-6 order-2 align-self-lg-center">
+						<h2 class="entry-title"><span>We Are Ready</span> to Outfit Your Business.</h2>
+						<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<a href="#" class="btn btn-green">Schedule a Consultation</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="favorites-products border-bottom py-5">
+			<div class="container">
+				<div class="row favorites-products-wrap m-auto">
+					<div class="col-12 col-sm-6 col-md-3 mb-3 mb-sm-5 mt-4 border-end-0 border-end-sm">
+						<div class="product-card text-center m-auto">
+							<div class="product-card__img">
+								<img src="../img/hp laptop.png" alt="">
+							</div>
+							<h6 class="pb-3 m-auto">Save up to <span class="text-secondary">$300</span> on
+								select Chromebooks.</h6>
+							<a href="" title="" class="btn btn-outline-dark btn-view-product m-auto">View Products</a>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-3 mb-3 mb-sm-5 mt-4 border-end-0 border-end-md">
+						<div class="product-card text-center m-auto">
+							<div class="product-card__img">
+								<img src="../img/LG Monitor.png" alt="">
+							</div>
+							<h6 class="pb-3 m-auto">Save up to <span class="text-secondary">$140</span> on
+								select monitors.</h6>
+							<a href="" title="" class="btn btn-outline-dark btn-view-product m-auto">View Products</a>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-3 mb-3 mb-sm-5 mt-4  border-end-0 border-end-sm">
+						<div class="product-card text-center m-auto">
+							<div class="product-card__img">
+								<img src="../img/epson printer.png" alt="">
+							</div>
+							<h6 class="pb-3 m-auto">Save on printers.</h6>
+							<a href="" title="" class="btn btn-outline-dark btn-view-product m-auto">View Products</a>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-3 mb-5 mt-4">
+						<div class="product-card text-center  m-auto">
+							<div class="product-card__img">
+								<img src="../img/lenovo desktop 1.png" alt="">
+							</div>
+							<h6 class="pb-3 m-auto">Save <span class="text-secondary">50%</span> on select
+								wireless routers.</h6>
+							<a href="" title="" class="btn btn-outline-dark btn-view-product m-auto">View Products</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-primary pt-5 pb-5">
+			<div class="container">
+				<div class="row text-title-row justify-content-center text-center pt-4 pb-4 mt-2 mb-2">
+					<div class="col text-white">
+						<h2 class="entry-title mb-3">Learn How We Can <span>Upgrade Your Business</span></h2>
+						<p class="max-w-500 m-auto mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="#" class="btn btn-white mt-2">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-white pt-5 pt-lg-4 pb-4">
+			<div class="container">
+				<div class="row info-card pt-3 pt-lg-2">
+					<div class="col-sm-6 col-lg-3 p-2 p-xl-5 py-lg-5 mb-5 mb-lg-0">
+						<div class="info-card__item text-center">
+							<img src="img/comment-alt-smile.png" alt="">
+							<h5 class="mb-4 mt-4">Customer Reviews</h5>
+							<p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+							</p>
+							<a href="" class="btn-lined">VIEW REVIEWS</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3 p-2 p-xl-5 py-lg-5 mb-5 mb-lg-0">
+						<div class="info-card__item text-center">
+							<img src="img/clipboard-list.png" alt="">
+							<h5 class="mb-4 mt-4">Order FAQ</h5>
+							<p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+							</p>
+							<a href="" class="btn-lined">VIEW REVIEWS</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3 p-2 p-xl-5 py-lg-5 mb-5 mb-lg-0">
+						<div class="info-card__item text-center">
+							<img src="img/conveyor-belt.png" alt="">
+							<h5 class="mb-4 mt-4">Shipping FAQ</h5>
+							<p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+							</p>
+							<a href="" class="btn-lined">VIEW REVIEWS</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3 p-2 p-xl-5 py-lg-5 mb-5 mb-lg-0">
+						<div class="info-card__item text-center">
+							<img src="img/shipping-fast.png" alt="">
+							<h5 class="mb-4 mt-4">Returns FAQ</h5>
+							<p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+							</p>
+							<a href="" class="btn-lined">VIEW REVIEWS</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	@@include('template/footer.html')
+
+</body>
+
+</html>
